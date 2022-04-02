@@ -1,15 +1,21 @@
 {
   "name": "shortener",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/server.ts",
   "repository": "git@github.com:LuisHenriqueFA14/shortener.git",
-  "author": "Luis Henrique <luish.fa1515@gmail.com>",
+  "author": "Luis Henrique",
   "license": "MIT",
+  "scripts": {
+	"start": "node ./dist/server.js",
+	"build": "tsc",
+	"dev": "ts-node-dev ."
+  },
   "dependencies": {
     "express": "^4.17.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"
   }
 }
