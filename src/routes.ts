@@ -1,10 +1,12 @@
 import { Router, Request, Response } from "express";
 
+import { ShortenURLController } from "./controllers/ShortenURLController";
+
 const routes = Router();
 
-routes.post("/a/create", (req: Request, res: Response) => {
-	return res.send("Shorten URL POST");
-});
+const shortenURLController = new ShortenURLController();
+
+routes.post("/a/create", shortenURLController.handle);
 
 routes.get("/p/:page", (req: Request, res: Response) => {
 	const page = req.params.page;
