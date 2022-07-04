@@ -2,3 +2,7 @@ node_modules/
 yarn.lock
 database/
 dist/
+
+.env
+prisma/database.db
+prisma/database.db-journal
