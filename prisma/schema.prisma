@@ -8,9 +8,10 @@ datasource db {
 }
 
 model Redirection {
-	id       String  @id @default(uuid())
-	origin   String  @unique
-	short    String  @unique
+	id       String    @id @default(uuid())
+	origin   String    @unique
+	short    String    @unique
+	created  DateTime  @default(now())
 
 	@@map("redirections")
 }
