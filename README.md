@@ -43,7 +43,7 @@ Example using <a href="https://github.com/httpie/httpie">HTTPie</a>:
 http GET localhost:3000/p/rxra15uj3c
 ```
 Return:
-```json
+```
 Found. Redirecting to https://github.com/LuisHenriqueFA14
 ```
 
